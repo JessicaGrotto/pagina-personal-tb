@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: silver;
+        }
+        header{
+            font-size: 10px;
+            color: black;
+            background-color: gray;
+            margin-bottom: 20px;
+        }
+        .botoes{
+            margin-right: 5px;
+            margin-left: 5px;
+            background-color: gray;
+            text-decoration: none;
+            color: black;
+            transition: 0s;
+        }
+        .botoes:hover{
+            background-color: dimgray;
+        }
+        form{
+            align-items: center;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+        div{
+            display: block;
+            margin-bottom: 8px;
+        }
+        button{
+            background-color: dimgrey;
+            transition: 1s;
+        
+        }
+        button:hover{
+            background-color: darkgray;
+        }
+        input, textarea{
+            background-color: white;
+            color: grey;
+            border: none;
+            padding-left: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a class="botoes" href="./index.html">Biografia</a>
+        <a class="botoes" href="./contact.html">Contacto</a>
+    </header>
+    <form>
+        <div>
+            <label id="nombre">Nombre: </label>
+            <input type="text" placeholder="Su nombre.." required>
+        </div>
+        <div>
+            <label id="correo">Correo eletrónico: </label>
+            <input type="email" placeholder="Su correo eletronico.." required>
+        </div>
+        <div class="conocer">
+            <label>¿Me conocías?:</label>
+            <input type="radio" id="sí" name="conocia_resp" value="sí">
+            <label for="sí">Sí</label>           
+            <input type="radio" id="no" name="conocia_resp" value="no">
+            <label for="no">No</label>
+        </div>   
+        <div class="idiomas">
+            <label>¿En que idioma quieres contactar? </label>
+            <select>
+                <option>Español</option>
+                <option>Portugés</option>
+                <option>Inglés</option>
+                <option>Francés</option>
+            </select>
+        </div>
+        <div class="mensaje">
+            <label>Su mensage: </label>
+            <textarea placeholder="Su mensaje acá.."></textarea required>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar todo</button>
+        </div>
+    </form>
+    
+</body>
+</html>
